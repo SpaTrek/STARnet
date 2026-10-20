@@ -27,7 +27,7 @@ If the input data consist of only single-cell transcriptomic data, the folder st
     │ matrix.mtx.gz
 ```
 ## Spatially resolved single-cell transcriptomics data
-If the input data include both single-cell transcriptomic data and spatial transcriptomic data, STARnet requires that the single-cell data first be mapped to spatial coordinates using CellTrek.  
+If the input data include both single-cell transcriptomic data and spatial transcriptomic data, STARnet requires that the single-cell data first be mapped to spatial coordinates using tools such as CellTrek. You can also use single-cell data that contains spatial coordinates itself.
 The input folder should contain the following files:
 ```
 ├─control
