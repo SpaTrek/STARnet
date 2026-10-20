@@ -12,36 +12,33 @@ If the input data consist of only single-cell transcriptomic data, the folder st
 ```text
 10x
 └─GSEXXXXXX
-├─control
-│ barcodes.tsv.gz
-│ features.tsv.gz
-│ matrix.mtx.gz
-│
-├─model  
-│ barcodes.tsv.gz
-│ features.tsv.gz
-│ matrix.mtx.gz
-│
-├─drug  
-│ barcodes.tsv.gz
-│ features.tsv.gz
-│ matrix.mtx.gz
+  ├─control
+    │ barcodes.tsv.gz
+    │ features.tsv.gz
+    │ matrix.mtx.gz
+  ├─model  
+    │ barcodes.tsv.gz
+    │ features.tsv.gz
+    │ matrix.mtx.gz
+    
+  ├─drug  
+    │ barcodes.tsv.gz
+    │ features.tsv.gz
+    │ matrix.mtx.gz
 ```
-## Single-cell + Spatial Transcriptomics data
-If the input data include both single-cell transcriptomic data and spatial transcriptomic data, STARnet requires that the single-cell data first be mapped to spatial coordinates using CellTreck.  
+## Spatially resolved single-cell transcriptomics data
+If the input data include both single-cell transcriptomic data and spatial transcriptomic data, STARnet requires that the single-cell data first be mapped to spatial coordinates using CellTrek.  
 The input folder should contain the following files:
 ```
 ├─control
-│ coord1_.csv
-│ spatial__adata.csv
-│
+  │ coord_1.csv
+  │ expression_matrix_1.csv
 ├─model  
-│ coord1_.csv
-│ spatial__adata.csv
-│
+  │ coord_2.csv
+  │ expression_matrix_2.csv
 ├─drug  
-│ coord1_.csv
-│ spatial__adata.csv
+  │ coord_3.csv
+  │ expression_matrix_3.csv
 ```
 # Requirements
 ```
