@@ -6,7 +6,7 @@ STARnet is a spatiotemporal analytical framework for systematically uncovering d
 At spatiotemporal resolution, STARnet quantitatively characterizes drug-driven recovery patterns in biological networks, identifying key target cell populations and gene sets. In addition, it reveals synergistic relationships among cell types and target genes, highlighting critical genes, ligand–receptor pairs, and cell populations that cooperate within recovery-associated networks and pathways.
 STARnet has been validated on multiple real-world biological datasets, demonstrating high consistency with previous findings.
 # Data Input
-Single-cell transcriptomic data, or single-cell data integrated with spatial transcriptomic data.
+For easier use of STARnet, we recommend you to organize your single-cell data or spatially resolved single-cell data into the following structure.
 ## Single-cell transcriptomic data
 If the input data consist of only single-cell transcriptomic data, the folder structure should follow the standard 10x Genomics format. For example:
 ```text
@@ -40,6 +40,8 @@ The input folder should contain the following files:
   │ coord_3.csv
   │ expression_matrix_3.csv
 ```
+# Vignettes
+To run STARnet on your own data, please see its tutorial notebook in the "Vignettes" folder.
 # Requirements
 ```
 python==3.10.16
@@ -63,3 +65,5 @@ scipy==1.16.3
 seaborn==0.13.2
 umap_learn==0.5.7
 ```
+# Contact
+STARnet was developed and maintained by Meng Gao. If you have any question, please contect gaomeng@zju.edu.cn.
